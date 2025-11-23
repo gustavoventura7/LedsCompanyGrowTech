@@ -1,0 +1,251 @@
+
+/* Config Geral */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../imagens/fundo_contato.png");
+  background-size: cover; /* cobre toda a tela */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgba(251, 246, 246, 0.927);
+  margin: 0; /* tira espaçamento branco */
+  padding: 0;
+}
+
+/* Cabeçalho */
+
+
+header#BotõesDePesquisa{
+  display: flex;
+  background-color: #072e07;
+    min-width: 300px ;
+    max-width: 1000px;
+    margin: auto;
+}
+      /* Logo da empresa com imagem */
+      div#logo{
+        display: flex;
+        text-align: center;
+        gap: 10px;
+      }
+      /* Menu de navegação  */
+      nav#menu {
+        
+      text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+      justify-content: space-between;
+      }
+      nav#menu ul{
+      display: flex;
+        list-style: none;
+      gap: 10px;
+      
+      }
+      nav#menu li {
+        text-decoration: none;
+        margin-top: 90px;
+      }
+      
+      nav#menu a {
+        font-size: 15px;
+        transition:  .5s;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 20px;
+        border: solid 2px #9900ff;
+        padding: 20px;
+        display: block;
+        font-weight: bolder;
+      }
+
+      nav#menu a:hover {
+
+        background-color: #b684e6;
+        color: #ffffff;
+        font-weight: bolder;
+        margin-left: 4px;
+        margin-top: 10px;
+        border-color: #9900ff;
+        box-shadow: 0 0 12px #ffffff76;
+      }
+/* Corpo */
+#cabecalho {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #0e1f09;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+}
+
+main{
+background-image: linear-gradient(#072e07, #1f854ae1,#53a82fb6);
+  min-width: 300px ;
+    max-width: 1000px;
+    margin: auto;
+}
+/* Formulario  */
+.fieldsetes{
+  margin: 15px;
+  padding: 20px;
+  border: solid 1px #9900ff;
+}
+p.identificação{
+  padding: 20px;
+  height: 20px;
+}
+label.sexo{
+   padding: 20px;
+}
+  .txtidentificacao{
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .identificação{
+    margin: 10px;
+  }
+#IdentificacaoUsuario{
+  padding: 10px;
+  background-color: rgb(14, 31, 9);
+  border-radius: 15px;
+}
+
+#MensagemDoUsuario{
+  padding: 10px;
+  background-color: rgb(14, 31, 9);
+  border-radius: 15px;
+}
+
+
+#BotaoFormulario{
+  text-align: center;
+  width: 75px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #42027e;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 2px #0000008c;
+  font-weight: bolder;
+   border: solid 1px #9900ff;
+}
+#BotaoFormulario:hover{
+  margin-left: 5px;
+  color: white;
+ background-color: #9e5bdd;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+  font-weight: bolder;
+  cursor: pointer;
+}
+      /* Seção consulte seu cep */
+.secaodecep{
+  justify-content: center;
+  left: 50%;
+  transform: translate();
+   /*Esqueminha pra ver o tamanho do item 
+   */
+  
+
+}
+#TextoAntesDeConsultaDoCEP{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#cabecalhoCEP{
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  width: 450px;
+  height: 70px;
+  background-color: #0e1f09;
+  border-radius: 15px;
+   border: solid #9900ff;
+  box-shadow: 1px 1px 12px #ffffff76;
+  
+}
+input#cep{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+  
+}
+div#entradausuario{
+  text-align: center;
+  margin-top: 20px;
+}
+button#botão{
+  font-weight: bold;
+  padding: 10px;
+  margin: 30px 0 20px 0;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #42027e;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+  color: white;
+  cursor: pointer;
+}
+  button#botão:hover{
+ background-color: #9e5bdd;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+  margin-left: 15px;
+  }
+div#resultado{
+  
+  text-align: center;
+  background-color: #9e5bdd98;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  
+}
+/* Botão direcionando para loja */
+div#loja{
+  padding-bottom: 20px;
+}
+#loja a{
+  width: 150px;
+  display: block;
+  background-color: #42027e;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-weight: bolder;
+   border: solid 1px #9900ff;
+   
+}
+#loja a:hover{
+  margin-left: 25px;
+   background-color: #9e5bdd;
+   border: solid #9900ff;
+  box-shadow: 0 0 12px #ffffff76;
+}
+/* Rodapé */
+footer {
+    min-width: 300px ;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: #055a05;
+    color: white;
+    font-size: 14px;
+    
+}

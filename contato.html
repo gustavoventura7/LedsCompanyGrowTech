@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leds Company GrowTech</title>
+  <link rel="stylesheet" href="estilo.css/contato.css">
+  </link>
+  <link rel="stylesheet" href="estilo.css/media_query_contato.css">
+  <script src="_arquivo.js/scriptdecep.js"></script>
+</head>
+
+ 
+
+   
+<header id="BotõesDePesquisa">
+
+      <div id="logo"><img src="imagens/logo_branca_5.png" width="363" height="250"></div>
+
+      <nav id="menu">
+        <ul type="disc">
+          <li><a href="index.html" id="um">INICIO</a></li>
+          <li><a href="leds.html" id="dois">SOBRE LED</a></li>
+          <li><a href="contato.html" id="tres">FALE CONOSCO</a></li>
+          <li><a href="loja.html">LOJA</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+   
+   <!-- Menu -->
+    <section id="corpo-full">
+            <article id="noticia-principal">
+               <header id="cabecalho"> <!-- Deixei como cabecalho único -->
+                  <hgroup>
+   
+                     <h3 id="faleConosco">Fale conosco pelo nosso</h3>
+   
+   
+                     <h1 id="FormulárioDeConato">Formulario de contato!</h1>
+                  </hgroup>
+               </header>
+   
+               <form method="post" id="fContato" action="costapolicarpomatheus@gmail.com">
+   
+                  <fieldset class="fieldsetes">
+                           <legend id="IdentificacaoUsuario">Identificação do Usuário</legend> <!--Adcionei ID no texto de IdentificacaoUsuario para usar no CSS-->
+      
+
+                              <p class="identificação"><label for="cNome" >Nome:</label><input class="txtidentificacao" type="text" name="tNome"          id="cNome" size="20"       maxlength="30"
+                              placeholder="Nome completo"    required>
+                              </p> <!--Área para colocar o nome -->
+
+                              <p class="identificação"> <label for="cMail" >E-mail:</label><input class="txtidentificacao"   type="email" name="tMail"     id="cMail"    size="20"
+                              maxlength="40"    placeholder="digite seu e-mail..."  required></p> <!--Área para colocar o E-mail -->
+                     
+                        <fieldset class="fieldsetes">
+      
+                                 <legend >Sexo</legend>
+                              <input type="radio" name="tSexo" id="cMasc" /><label class="sexo" for="cMasc"> Masculino</label><br>
+                              
+                              <input type="radio" name="tSexo" id="cFem" /> <label class="sexo" for="cFem"> Feminino</label>
+                        </fieldset><!--Área para a escolha do sexo -->
+
+
+                        <p class="identificação">Data de Nascimento: <br><input type="date" name="tNasc" id="cNasc" style="border-radius: 10px;" required></p> <!--Área para colocar a data de nascimento-->
+                  </fieldset>
+
+                  <fieldset class="fieldsetes">
+                     <legend id="MensagemDoUsuario">Mensagem do Usuário</legend>
+   
+   
+   
+   
+                           <p ><label for="cMsg">Mensagem:</label><br> <!--Adicionei quebra de linha para o campo de mensagem ficar abaixo do campo de texto-->
+         
+                           <textarea class="txtidentificacao" name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem..." style="border-radius: 10px;" required></textarea></p><!--Área para escrever a mensagem -->
+   
+                     <button id="BotaoFormulario">Enviar</button> <!--Botão para enviar o formulario -->
+                  </fieldset>
+   
+   
+               </form>
+   
+            </article>
+         </section>
+   
+   
+   
+   <!-- DIVISÃO QUE MOSTRA AS ENTRADAS DE USUÁRIO E RESULTADOS DE API -->
+   
+   <section class="secaodecep">
+        
+   
+         <h3 id="TextoAntesDeConsultaDoCEP">
+               Faça uma consulta e verifique se entregamos no seu endereço
+         </h3>
+         
+         <h1 id="cabecalhoCEP">
+               Coloque seu CEP abaixo!
+         </h1>
+         
+         
+         
+         <div id="entradausuario">
+         
+            <!--PARTE QUE DEFINE O TIPO DE ENTRADA E MOSTRA TEXTOS NO CAMPO VAZIO DELA -->
+               <input type="text" id="cep" placeholder="Digite os 8 digitos do seu CEP aqui" maxlenght="8"><br>
+         
+            <!--DEFINIÇÕES DE BOTÃO -->
+               <button onclick="consultarCEP()" id="botão" cursor="pointer">Se já digitou é só apertar aqui</button>
+         </div>
+         
+            
+         
+            <!-- CAMPO ONDE VAI SAIR O RESULTADO DO CEP -->
+         <div id="resultado"></div>
+         </section>
+         <!-- Botão direcionado para loja -->
+         <div id="loja"><a href="loja.html">Veja nossa loja</a></div>
+</main>
+
+   <!-- Rodapé -->
+   
+   <footer>
+      <p>© 2025 Leds Company GrowTech - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
