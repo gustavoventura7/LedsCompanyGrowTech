@@ -163,10 +163,10 @@ label.sexo{
 }
 
 #cabecalhoCEP{
-  margin: auto;
+  margin-left: 50px;
+ margin-right: 50px;
   text-align: center;
   padding: 10px;
-  width: 450px;
   height: 70px;
   background-color: #0e1f09;
   border-radius: 15px;
@@ -215,7 +215,7 @@ div#resultado{
 }
 /* Botão direcionando para loja */
 div#loja{
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
 }
 #loja a{
   width: 150px;
