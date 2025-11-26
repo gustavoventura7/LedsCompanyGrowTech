@@ -24,3 +24,4 @@
         document.getElementById("resultado").innerHTML = "Não foi possível localizar o seu CEP"
         });
     }
+    console.log("Teste");
